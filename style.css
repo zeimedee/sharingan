@@ -1,0 +1,123 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.contain{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .tomoe1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform: rotate(220deg);
+    margin-left: 90px;
+    margin-top: 20px;
+    z-index: 1;
+    /* animation: spin 5s linear infinite; */
+}
+
+.tomoe2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform: rotate(340deg);
+    margin-right: 90px;
+    margin-top: 30px;
+}
+
+.tomoe3{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform: rotate(120deg);
+    margin-bottom: 100px;
+}
+
+.a{
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+.b{
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: red;
+    margin-left:-14px;
+    /* margin-top: -20px; */
+}
+
+.c{
+    z-index: 3;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color:black;
+    margin-left:-24px;
+    margin-top: 4px;
+}
+
+.iris{
+    position: absolute;
+    z-index: 0;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iris > .pupil{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.ring{
+    position: absolute;
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 5s linear infinite;
+}
+
+.eye{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: red;
+    border: 2px solid black;
+    
+}
+
+@keyframes spin {   
+    100%{
+        transform:rotate(360deg); 
+    }
+    
+}
+
+
+
